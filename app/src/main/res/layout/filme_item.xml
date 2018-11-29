@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/filmeIconImageView"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filmeTitleTextView"
+            android:text="Titulo do filme"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.5"
+                android:id="@+id/rateTextView"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
