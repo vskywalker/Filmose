@@ -9,14 +9,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/layoutImageLinearLayout">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgDetailImageView"/>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="hello"/>
+            android:layout_height="wrap_content"
+            android:text="titulo do filme"
+            android:textSize="28dp"
+            android:padding="8dp"
+            android:id="@+id/tituloDetailTextView"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="resumo"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:justificationMode="inter_word"
+            android:id="@+id/overviewTextView"
+            />
     </LinearLayout>
 
 
