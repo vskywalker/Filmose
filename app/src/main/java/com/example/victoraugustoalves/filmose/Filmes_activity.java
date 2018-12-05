@@ -19,6 +19,7 @@ import com.android.volley.toolbox.Volley;
 import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Filmes_activity extends AppCompatActivity {
 
@@ -40,7 +41,7 @@ public class Filmes_activity extends AppCompatActivity {
         filmesListView = (ListView) findViewById(R.id.filmesListView);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "https://api.themoviedb.org/3/discover/movie?api_key=592d158f0a6670f4842533eaae583553&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + id_genero;
+        String url = "https://api.themoviedb.org/3/discover/movie?api_key=592d158f0a6670f4842533eaae583553&language=" + Locale.getDefault().toString().replace('_', '-') + "&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + id_genero;
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new com.android.volley.Response.Listener<String>() {

@@ -21,20 +21,25 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="titulo do filme"
             android:textSize="28dp"
             android:padding="8dp"
             android:id="@+id/tituloDetailTextView"/>
 
-        <TextView
-            android:layout_width="match_parent"
+        <ScrollView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="resumo"
-            android:textSize="20dp"
-            android:padding="5dp"
-            android:justificationMode="inter_word"
-            android:id="@+id/overviewTextView"
-            />
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_weight="1.0"
+                android:id="@+id/overviewTextView"
+                />
+        </ScrollView>
+
     </LinearLayout>
 
 

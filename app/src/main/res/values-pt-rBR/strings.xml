@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Filmose</string>
+    <string name="title_home">Início</string>
+    <string name="rate">Nota:</string>
+    <string name="movie_name">Título do filme:</string>
+    <string name="title_notifications">Notificações</string>
+</resources>
