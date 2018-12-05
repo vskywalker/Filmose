@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Filmose</string>
+    <string name="app_name" translatable="false">Filmose</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_filmes_activity">filmes_activity</string>
+    <string name="movie_name">Movie title:</string>
+    <string name="rate">Rate:</string>
 </resources>

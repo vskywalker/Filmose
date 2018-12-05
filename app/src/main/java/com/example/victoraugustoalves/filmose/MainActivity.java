@@ -24,6 +24,7 @@ import com.google.gson.GsonBuilder;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        generosListView = (ListView) findViewById(R.id.generosListView);
+        generosListView = findViewById(R.id.generosListView);
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=592d158f0a6670f4842533eaae583553&language=en-US";
+        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=592d158f0a6670f4842533eaae583553&language=" + Locale.getDefault().toString().replace('_', '-');
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
