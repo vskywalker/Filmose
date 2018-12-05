@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Filmose</string>
+    <string name="title_home">フライト</string>
+    <string name="title_notifications">通知</string>
+    <string name="movie_name">映画タイトル：</string>
+    <string name="rate">"注意： "</string>
 </resources>
